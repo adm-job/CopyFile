@@ -1,0 +1,14 @@
+C:\CsharpProjects\CopyFile\bin\Debug\net8.0\CopyFile.exe
+C:\CsharpProjects\CopyFile\bin\Debug\net8.0\CopyFile.deps.json
+C:\CsharpProjects\CopyFile\bin\Debug\net8.0\CopyFile.runtimeconfig.json
+C:\CsharpProjects\CopyFile\bin\Debug\net8.0\CopyFile.dll
+C:\CsharpProjects\CopyFile\bin\Debug\net8.0\CopyFile.pdb
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.AssemblyInfoInputs.cache
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.AssemblyInfo.cs
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.csproj.CoreCompileInputs.cache
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.dll
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\refint\CopyFile.dll
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.pdb
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.genruntimeconfig.cache
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\ref\CopyFile.dll
