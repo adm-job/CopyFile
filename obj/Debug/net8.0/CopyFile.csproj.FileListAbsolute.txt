@@ -12,3 +12,4 @@ C:\CsharpProjects\CopyFile\obj\Debug\net8.0\refint\CopyFile.dll
 C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.pdb
 C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.genruntimeconfig.cache
 C:\CsharpProjects\CopyFile\obj\Debug\net8.0\ref\CopyFile.dll
+C:\CsharpProjects\CopyFile\obj\Debug\net8.0\CopyFile.sourcelink.json
