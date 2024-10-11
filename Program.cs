@@ -13,7 +13,7 @@ class Program
         /*      string? nameFile = "settingstest.txt";
                 string? nameFileFlg = "settingstest.flg";
                 string? nameFileList = "listPC.txt"; */
-
+        Console.WriteLine("Нужны 3 файла settings.txt, settings.flg, listPC.txt(СПИСОК) должны лежать в папке" );
         Console.WriteLine("Введите имя файла конфигурации");
         string? nameFile = Console.ReadLine();
         Console.WriteLine("Введите имя файла флага");
@@ -35,10 +35,12 @@ class Program
         if (!File.Exists(filePatch))
         {
             Console.WriteLine($"Файл {nameFile} не найден");
+            Console.ReadLine(); 
         }
         else if (!File.Exists(fileFlgPatch))
         {
             Console.WriteLine($"Файл {fileFlgPatch} не найден");
+            Console.ReadLine();
         }
         else
         {
@@ -48,7 +50,7 @@ class Program
             Console.WriteLine("Файл находится: " + fileFlgPatch + "\n");
             Console.Write("Название файла списка: " + nameFileList + " ");
             Console.WriteLine("Файл находится: " + fileListPatch);
-        }
+        
 
         int numberLines = 1;
         foreach (var line in File.ReadLines(fileListPatch))
@@ -75,7 +77,7 @@ class Program
                 Console.WriteLine(ioex.Message);
             }
             numberLines++;
-
+        }
         }
 
     }
