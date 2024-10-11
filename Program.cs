@@ -10,10 +10,15 @@ class Program
     static void Main(string[] args)
     {
         //Получение названия файла для копирования
-        string? nameFile = "settingstest.txt";
-        string? nameFileFlg = "settingstest.flg";
+        /*      string? nameFile = "settingstest.txt";
+                string? nameFileFlg = "settingstest.flg";
+                string? nameFileList = "listPC.txt"; */
+
+        Console.WriteLine("Введите имя файла конфигурации");
+        string? nameFile = Console.ReadLine();
+        Console.WriteLine("Введите имя файла флага");
+        string? nameFileFlg = Console.ReadLine();
         string? nameFileList = "listPC.txt";
-        //List<string> connectList = new List<string>();
 
         string patch = Directory.GetCurrentDirectory();
         string filePatch = patch + "\\" + nameFile;
