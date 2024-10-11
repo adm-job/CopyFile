@@ -9,7 +9,7 @@ class Program
 {
     static void Main(string[] args)
     {
-/*         //Получение названия файла для копирования
+        //Получение названия файла для копирования
         string? nameFile = "settingstest.txt";
         string? nameFileFlg = "settingstest.flg";
         string? nameFileList = "listPC.txt";
@@ -37,42 +37,40 @@ class Program
         }
         else
         {
-            Console.WriteLine("Название файла конфигурации: " + nameFile);
+            Console.Write("Название файла конфигурации: " + nameFile + " ");
             Console.WriteLine("Файл находится: " + filePatch + "\n");
-            Console.WriteLine("Название файла флага: " + nameFileFlg);
-            Console.WriteLine("Файл находится: " + fileFlgPatch);
+            Console.Write("Название файла флага: " + nameFileFlg + " ");
+            Console.WriteLine("Файл находится: " + fileFlgPatch + "\n");
+            Console.Write("Название файла списка: " + nameFileList + " ");
+            Console.WriteLine("Файл находится: " + fileListPatch);
         }
+
+        int numberLines = 1;
         foreach (var line in File.ReadLines(fileListPatch))
         {
-            Console.WriteLine($"{line}");
-            
-            file1.CopyTo(line,true);
-           // file2.CopyTo(nameFileFlg,true);
-        } */
+            Console.WriteLine($"{numberLines} адрес {line}");
 
-        string path = @"d:\in\SoureFile.txt";
-        string path2 = @"d:\in\NewFile.txt";
-        FileInfo fi1 = new FileInfo(path);
-        //FileInfo fi2 = new FileInfo(path2);
-
-        try
-        {
-            // Create the source file.
-           // using (FileStream fs = fi1.Create()) { }
-
-            //Ensure that the target file does not exist.
-/*             if (File.Exists(path2))
+            try
             {
-                fi2.Delete();
-            } */
+                file1.CopyTo((line + nameFile), true);
+                Console.WriteLine($"Файл {nameFile} скопирован");
+            }
+            catch (IOException ioex)
+            {
+                Console.WriteLine(ioex.Message);
+            }
 
-            //Copy the file.f
-            fi1.CopyTo(path2,true);
-            Console.WriteLine("{0} was copied to {1}.", path, path2);
-        }
-        catch (IOException ioex)
-        {
-            Console.WriteLine(ioex.Message);
+            try
+            {
+                file2.CopyTo((line + nameFile), true);
+                Console.WriteLine($"Файл {nameFileFlg} скопирован");
+            }
+            catch (IOException ioex)
+            {
+                Console.WriteLine(ioex.Message);
+            }
+            numberLines++;
+
         }
 
     }
